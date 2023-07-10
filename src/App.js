@@ -1,25 +1,13 @@
-import logo from './logo.svg';
-import './App.css';
+// import Banana from './Gallery/profile.js'; // import from an export defautl: any name I want
+import { GalleryScients } from './Gallery/Profile.js'; // import from export normal: must match names
+import { Title } from './Gallery/Profile.js'; // import from export normal: must match names
 
-function App() {
+export default function Gallery() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Title />
+      <GalleryScients />
+    </>
   );
 }
 
-export default App;
