@@ -40,7 +40,7 @@ const Profile = (props, size=50)  => {
           </ul>
             {props.children}
             {/* {props.isPacked ? <del>ola</del> : <del>tchau</del>} */}
-            {props.isPacked && <del>ola</del>}
+            {props.isPacked && <p><del>ola</del></p>}
         </div>
     </div>
   )}
